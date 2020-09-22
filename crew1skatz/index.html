@@ -1,0 +1,124 @@
+
+<html> 
+	<head>
+<link type="text/css" rel="stylesheet" href="main.css" />
+
+			
+		<title> Wesley's World of SkateBoarding Wonder</title>
+			<script>
+			function banner(){
+			var text = confirm("You Sure 'Bout that?");
+			return text;
+	}
+			function answer(){ 
+			var radio = document.getElementsByName("trivia");
+			var selection = false;
+			var message = ""; 
+			for( var i = 0; i < radio.length; i++) {
+		if(radio[i].value == "yes" && radio[i].checked == true) { 
+		selection = true; 
+	} //end if statement 
+	} //end for loop
+		if(selection == true) {
+		message = message + "<b><p style='color:green'>The Correct Answer!</p></b>"; 
+	
+	} 	else { 
+		message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+	}
+		document.getElementById("response").innerHTML = message;
+
+	} //end function answer
+
+</script> 
+
+
+			</head> 
+			
+		<body id= "background">
+	
+	<a onclick="return banner()" href="https://youtube.com"> 
+		<header id="banner"> WELCOME </header>
+	</a>
+	
+		<nav>
+			<ul id="navmenu">
+		<li class="navitem"> <a href="index.html"> home </a> </li>
+		<li class="navitem"> <a href="decks.html"> Trueskate Custom Decks </a> </li>
+		<li class="navitem"> <a href="grips.html"> Trueskate custom Grips </a> </li>
+		<li class="navitem"> <a href="insta.html"> Trueskate Instagram Accounts </a> </li>
+		<li class="navitem"> <a href="TrueskateTemplates.html"> Trueskate Templates </a> </li>
+		
+			</ul>
+		</nav>
+
+
+		
+<h1> Welcome To Wesley's World Of SkateBoarding Wonder</h1>
+
+<p> 
+	Here is a place, you will enter, into another dimension, into your mind, your imagination even, so <i> <strong>beware.</strong> </i> Every place you click will take you to another dimension. 
+</p>
+
+		<h2> Trueskate Mobile Game </h2>
+		<div class="images">		
+		
+		<img src="images/IMG_7636.jpg" width="100">
+
+		<img src="images/IMG_7549.jpg" width="100">
+
+		<img src="images/IMG_7517.jpg" width="100"> 
+
+		<img src="images/IMG_7557.jpg" width="100">
+
+		<img src="images/IMG_7514.jpg" width="100"> 
+ 
+		
+		</div>
+	
+		
+<ol>
+	<li class="listitem"> <a href="decks.html"> Custom Skateboard Deck Graphics </a> </li>
+
+	<li class="listitem"> <a href="grips.html"> Custom Skateboard Grip Graphics </a> </li>
+
+	<li class="listitem"> <a href="https://trueaxis.com"> True Axis</li> </a>
+
+
+
+</ol>
+			<h2 class="h2"> Real Life Skating </h2>
+	
+	<li><a href="https://www.youtube.com/user/sprocker7"> Professional Skateboarding </a> </li>
+	<li><a href="https://brailleskateboarding.com/learn-to-skate/skateboarding-trick-guide/"> learn to skate </a> </li>
+	<li><a href="https://www.youtube.com/user/StreetLeague"> Street League Skateboarding (sls) </a> </li>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/VasSLuFO4wY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p> Subscribe to Braille Skateboarding on youtube above or go to their website above.  </p>
+
+<form>
+		<div id="response"> </div>
+		<h2 class="purple"> Skateboarding </h2>
+<p> Who Is <span class="prO"> Carlos Cathulu Lastra </span> </P>
+	<div class="boards">
+	<p>
+	<input type="radio" name="trivia" value="no"> sponsered skater from the SanFransisco Bay area.
+	</p>
+	<p>	<input type="radio" name="trivia" value="yes"> Member of Braille Stateboarding CO. in the bay area of SanFransisco Caillfornia.
+	</P>
+	<p>
+	<input type="radio" name="trivia" value="no"> Provessional Skateboarder that skated in the SLS and X-Games.
+	<p> <input onclick="answer()" id="button" type="button" value="The Correct Answer Is....."></p>
+	</p>
+	<P> 
+		</div>
+</form>
+
+
+</ol>
+	<footer id="footer"> Enjoy My Website </footer>
+
+
+
+
+		</body> 
+</html>
